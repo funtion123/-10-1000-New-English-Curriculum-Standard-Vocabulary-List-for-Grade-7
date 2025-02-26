@@ -1,0 +1,744 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七年级新课标英语单词表</title>
+    <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" href="css.css">
+    <!-- 引入外部JavaScript文件 -->
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <input type="text" id="Search for words" name="Search for words" placeholder="搜索单词">
+    <br>
+    <form onsubmit="event.preventDefault(); switchConversions();">
+        <select name="unit" id="unit" onchange="handleUnitChange()">
+            <option value="Starter">Welcome to junior high!</option>
+            <option value="unit 1">A new start</option>
+            <option value="unit 2">More than fun</option>
+            <option value="unit 3">Family ties</option>
+            <option value="unit 4">Time to celebrate</option>
+            <option value="unit 5">Fantastic friends</option>
+            <option value="unit 6">The power of plants</option>
+            <option value="Names">Names</option>
+            <option value="Places">Places</option>
+            <option value="Others">Others</option>
+            <option value="Vocabulary">Vocabulary</option>
+        </select>
+        <br>
+    </form>
+
+    <table id="wordTable">
+        <tr>
+            <th>单元</th>
+            <th>单词</th>
+            <th>音标</th>
+            <th>中文释义</th>
+            <th>页码</th>
+        </tr>
+        <tr class="unit">
+            <td>Starter</td>
+            <td>junior high</td>
+            <td>/ˈdʒuːniər haɪ/</td>
+            <td>初级中学</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ready</td>
+            <td>/ˈredi/</td>
+            <td>准备好（做某事）的</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>textbook</td>
+            <td>/ˈtekstbʊk/</td>
+            <td>教科书，教材，课本</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>eraser</td>
+            <td>/ɪˈreɪzər/</td>
+            <td>橡皮</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>history</td>
+            <td>/ˈhɪstri/</td>
+            <td>历史</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>geography</td>
+            <td>/dʒiˈɒɡrəfi/</td>
+            <td>地理</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>biology</td>
+            <td>/baɪˈɒlədʒi/</td>
+            <td>生物</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>physics</td>
+            <td>/ˈfɪzɪks/</td>
+            <td>物理</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>information technology</td>
+            <td>/ˌɪnfəˈmeɪʃən tekˈnɒlədʒi/</td>
+            <td>信息技术</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>chemistry</td>
+            <td>/ˈkemɪstri/</td>
+            <td>化学</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>jacket</td>
+            <td>/ˈdʒækɪt/</td>
+            <td>夹克，短上衣</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>red scarf</td>
+            <td></td>
+            <td>红领巾</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hat</td>
+            <td>/hæt/</td>
+            <td>帽子</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>grey</td>
+            <td>/ɡreɪ/</td>
+            <td>灰色的</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>uniform</td>
+            <td>/ˈjuːnɪfɔːm/</td>
+            <td>制服</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>teaching building</td>
+            <td></td>
+            <td>教学楼</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>dining hall</td>
+            <td></td>
+            <td>食堂</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>lab</td>
+            <td>/læb/</td>
+            <td>实验室</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hold</td>
+            <td>/həʊld/</td>
+            <td>召开，举行；进行</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>event</td>
+            <td>/ɪˈvent/</td>
+            <td>活动</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>join</td>
+            <td>/dʒɔɪn/</td>
+            <td>参与，加入（某项活动）</td>
+            <td>8</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 1</td>
+            <td>without</td>
+            <td>/wɪˈðaʊt/</td>
+            <td>缺乏；没有</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sentence</td>
+            <td>/ˈsentəns/</td>
+            <td>句子</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>start</td>
+            <td>/stɑːrt/</td>
+            <td>开始（做某事）</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>point out</td>
+            <td></td>
+            <td>指出，指明</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>mistake</td>
+            <td>/mɪˈsteɪk/</td>
+            <td>错误</td>
+            <td>17</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 2</td>
+            <td>rock music</td>
+            <td></td>
+            <td>摇滚乐</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>electric</td>
+            <td>/ɪˈlektrɪk/</td>
+            <td>用电的；电动的</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>guitar</td>
+            <td>/ɡɪˈtɑːr/</td>
+            <td>吉他</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>band</td>
+            <td>/bænd/</td>
+            <td>乐队，乐团</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>fun</td>
+            <td>/fʌn/</td>
+            <td>乐趣</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sound</td>
+            <td>/saʊnd/</td>
+            <td>声音</td>
+            <td>32</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 3</td>
+            <td>silent</td>
+            <td>/ˈsaɪlənt/</td>
+            <td>不作声的</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>along</td>
+            <td>/əˈlɒŋ/</td>
+            <td>顺着；沿着</td>
+            <td>48</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 4</td>
+            <td>laughter</td>
+            <td>/ˈlɑːftər/</td>
+            <td>笑；笑声</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>fill</td>
+            <td>/fɪl/</td>
+            <td>（使）充满；装满</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>unusual</td>
+            <td>/ʌnˈjuːʒuəl/</td>
+            <td>不平常的</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>treat</td>
+            <td>/triːt/</td>
+            <td>请客，款待，招待</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>myself</td>
+            <td>/maɪˈself/</td>
+            <td>我本人，我亲自，我自己</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>dumpling</td>
+            <td>/ˈdʌmplɪŋ/</td>
+            <td>水饺</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>whole</td>
+            <td>/hoʊl/</td>
+            <td>全部的，整个的</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>become</td>
+            <td>/bɪˈkʌm/</td>
+            <td>成为，变成</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>chef</td>
+            <td>/tʃef/</td>
+            <td>厨师</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>cucumber</td>
+            <td>/ˈkjuːkʌmbər/</td>
+            <td>黄瓜</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hang</td>
+            <td>/hæŋ/</td>
+            <td>悬挂</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>balloon</td>
+            <td>/bəˈluːn/</td>
+            <td>气球</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>lantern</td>
+            <td>/ˈlæntərn/</td>
+            <td>提灯；灯笼</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>dish</td>
+            <td>/dɪʃ/</td>
+            <td>（烹制好的）菜肴，一道菜</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>joke</td>
+            <td>/dʒoʊk/</td>
+            <td>说笑话；开玩笑</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>shocked</td>
+            <td>/ʃɒkt/</td>
+            <td>震惊的</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>laugh</td>
+            <td>/læf/</td>
+            <td>发出笑声，（大）笑</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pork</td>
+            <td>/pɔːrk/</td>
+            <td>猪肉</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>round</td>
+            <td>/raʊnd/</td>
+            <td>圆形的，环形的</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>shape</td>
+            <td>/ʃeɪp/</td>
+            <td>形，形状，外形</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>reunion</td>
+            <td>/ˌriːˈjuːniən/</td>
+            <td>团圆，团聚</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>piece</td>
+            <td>/piːs/</td>
+            <td>片；块；段；截</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>knife</td>
+            <td>/naɪf/</td>
+            <td>刀</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>smell</td>
+            <td>/smel/</td>
+            <td>气味</td>
+            <td>65</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 5</td>
+            <td>view</td>
+            <td>/vjuː/</td>
+            <td>观点，意见</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>pigeon</td>
+            <td>/ˈpɪdʒɪn/</td>
+            <td>鸽子</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>surprise</td>
+            <td>/səˈpraɪz/</td>
+            <td>意想不到的事</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>knock around</td>
+            <td></td>
+            <td>（在某处）悠闲地度过</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>droppings</td>
+            <td>/ˈdrɒpɪŋz/</td>
+            <td>（兽或鸟的）粪</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>boring</td>
+            <td>/ˈbɔːrɪŋ/</td>
+            <td>无趣的，无聊的，乏味的</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>feed</td>
+            <td>/fiːd/</td>
+            <td>喂养，饲养，给……食物</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>madly</td>
+            <td>/ˈmædli/</td>
+            <td>发狂地；无法控制地</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>scary</td>
+            <td>/ˈskeəri/</td>
+            <td>可怕的，骇人的，恐怖的</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>research</td>
+            <td>/rɪˈsɜːrtʃ/</td>
+            <td>（对某一主题的）研究，探索</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>recognise</td>
+            <td>/ˈrekəɡnaɪz/</td>
+            <td>认出；认识；辨认出</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>themselves</td>
+            <td>/ðəmˈselvz/</td>
+            <td>他们自己；她们自己；它们自己</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>mirror</td>
+            <td>/ˈmɪrər/</td>
+            <td>镜子</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>itself</td>
+            <td>/ɪtˈself/</td>
+            <td>自己，自身</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>maybe</td>
+            <td>/ˈmeɪbi/</td>
+            <td>也许，大概，可能（表示不肯定）</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>several</td>
+            <td>/ˈsevrəl/</td>
+            <td>几个，数个，一些</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>kilometre</td>
+            <td>/ˈkɪləmiːtər/</td>
+            <td>千米，公里</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>get lost</td>
+            <td></td>
+            <td>迷路</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>speed</td>
+            <td>/spiːd/</td>
+            <td>速度，速率</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>amazing</td>
+            <td>/əˈmeɪzɪŋ/</td>
+            <td>惊人的；了不起的</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>enough</td>
+            <td>/ɪˈnʌf/</td>
+            <td>足够的，充足的，充分的</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>change</td>
+            <td>/tʃeɪndʒ/</td>
+            <td>变化，改变</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>dolphin</td>
+            <td>/ˈdɒlfɪn/</td>
+            <td>海豚</td>
+            <td>83</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>beaver</td>
+            <td>/ˈbiːvər/</td>
+            <td>河狸，海狸</td>
+            <td>83</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>no wonder</td>
+            <td></td>
+            <td>难怪</td>
+            <td>83</td>
+        </tr>
+        <tr class="unit">
+            <td>Unit 6</td>
+            <td>within</td>
+            <td>/wɪˈðɪn/</td>
+            <td>在（建筑或地区）里</td>
+            <td>96</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>quarter</td>
+            <td>/ˈkwɔːrtər/</td>
+            <td>一刻钟，十五分钟</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>workshop</td>
+            <td>/ˈwɜːrkʃɒp/</td>
+            <td>车间，工场</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>leaf</td>
+            <td>/liːf/</td>
+            <td>叶，叶子</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>collect</td>
+            <td>/kəˈlekt/</td>
+            <td>收集，采集；使集中</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sunlight</td>
+            <td>/ˈsʌnlaɪt/</td>
+            <td>阳光</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>root</td>
+            <td>/ruːt/</td>
+            <td>根</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>send</td>
+            <td>/sɛnd/</td>
+            <td>送出，发出</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>rise</td>
+            <td>/raɪz/</td>
+            <td>升高，上升</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>stem</td>
+            <td>/stɛm/</td>
+            <td>（植物的）茎，梗，柄</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>mix</td>
+            <td>/mɪks/</td>
+            <td>（使）混合，拌和</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>produce</td>
+            <td>/prəˈduːs/</td>
+            <td>（自然地）生产，产生，出产</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>sugar</td>
+            <td>/ˈʃʊɡər/</td>
+            <td>糖</td>
+            <td>97</td>
+        </tr>
+    </table>
+
+    <script>
+        function handleUnitChange() {
+            const unitSelect = document.getElementById('unit');
+            const selectedUnit = unitSelect.value;
+            const rows = document.querySelectorAll('#wordTable tr');
+
+            rows.forEach(row => {
+                const unitCell = row.querySelector('td.unit');
+                if (unitCell) {
+                    const unitText = unitCell.textContent.trim();
+                    if (unitText === selectedUnit) {
+                        row.style.display = '';
+                        const nextRows = row.nextElementSibling;
+                        if (nextRows) {
+                            nextRows.style.display = '';
+                        }
+                    } else {
+                        row.style.display = 'none';
+                    }
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize the table with the first unit
+        handleUnitChange();
+    </script>
+</body>
+</html>
